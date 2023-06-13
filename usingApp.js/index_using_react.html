@@ -24,18 +24,7 @@
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
-    <script>
-      //first argument: what tag we're using
-      //second argument: an object, where we give attributes to our tags
-      //third argument: what needs to be done in the tag
-      const heading = React.createElement("h1", {}, "Hello World From React!");
-
-      //telling React where to render this heading
-      //Step 1: creating Root using ReactDOM, since we need to put our heading in DOM
-      const root = ReactDOM.createRoot(document.getElementById("root"));
-
-      //Step 2: render
-      root.render(heading);
+    <script src="./App.js">
     </script>
   </body>
 </html>
