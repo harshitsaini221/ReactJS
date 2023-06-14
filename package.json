@@ -1,0 +1,23 @@
+{
+  "name": "reactjs",
+  "version": "1.0.0",
+  "description": "reactJS",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshitsaini221/reactJS.git"
+  },
+  "keywords": [],
+  "author": "Harshit Saini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harshitsaini221/reactJS/issues"
+  },
+  "homepage": "https://github.com/harshitsaini221/reactJS#readme",
+  "devDependencies": {
+    "parcel": "^2.9.2"
+  }
+}
