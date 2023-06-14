@@ -1,17 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement(
-    "div",
-    { id: "parent" },
-    React.createElement("div", { id: "child" }, [
-      React.createElement("h1", {}, "I am heading Tag"),
-      React.createElement("h2", {}, "I am heading 2 Tag"),
-    ])
-  );
-  
-  console.log(parent);
-  
-  const root = ReactDOM.createRoot(document.getElementById("root"));
-  
-  root.render(parent);
+//React Element
+
+// const heading = React.createElement(
+//   "h1",
+//   { id: "heading" },
+//   "Harshit Saini ReactJS"
+// );
+
+//JSX -> HTML-like or XML-like
+const jsxHeading = <h1 id="heading">JSX Heading!</h1>;
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(jsxHeading);
