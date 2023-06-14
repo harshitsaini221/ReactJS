@@ -20,4 +20,5 @@ Just Some Random ReactJS Things I love to Do!
 -  Diagnostics
 -  Error Handling
 -  HTTPs Support
--  Tree Shaking - removes unused code  
+-  Tree Shaking - removes unused code
+-  Different dev and prod builds
