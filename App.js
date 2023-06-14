@@ -10,8 +10,24 @@ import ReactDOM from "react-dom/client";
 // );
 
 //JSX -> HTML-like or XML-like
-const jsxHeading = <h1 id="heading">JSX Heading!</h1>;
+const Title = () => (
+  <h1 id="heading" tabIndex="5">
+    JSX Heading!
+  </h1>
+);
+
+//React Functional Component
+const HeadingComponent = () => {
+  return (
+    <div id="container">
+      <Title />
+      <h1 className="heading">React Functional Component</h1>
+    </div>
+  );
+};
+
+// similar to const HeadingComponent = () => <h1 className="heading">React Functional Component</h1>;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxHeading);
+root.render(<HeadingComponent />);
