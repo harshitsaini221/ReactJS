@@ -39,16 +39,12 @@ const Header = () => {
   );
 };
 
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
   return (
     <div className="res-card">
-      <img
-        className="res-logo"
-        alt="res-logo"
-        src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/rfngxpkeablm4ses3d0j"
-      />
-      <h3>Meghana Foods</h3>
-      <h4>Biryani, North Indian, Asian</h4>
+      <img className="res-logo" alt="res-logo" src={props.image} />
+      <h3>{props.resName}</h3>
+      <h4>{props.cuisine}</h4>
       <h4>4.4 Stars</h4>
       <h4>38 mins</h4>
     </div>
@@ -60,33 +56,16 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
+        <RestaurantCard
+          resName="Meghana Foods"
+          cuisine="Biryani, North Indian, Asian"
+          image="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/rfngxpkeablm4ses3d0j"
+        />
+        <RestaurantCard
+          resName="KFC"
+          cuisine="Burger, Fast Food"
+          image="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/56c9ab92bd79745fd152a30fa2525426"
+        />
       </div>
     </div>
   );
